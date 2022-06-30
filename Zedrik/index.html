@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+   </head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <img src="img/stilogo.png" alt="">
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#two">Academics</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#three">About</a></li>
+      
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+  </div>
+<div class="main">
+
+  <section id="one">
+   <div class="home">
+      <div class="banner1">
+        <img src="img/sti1.jpg" alt="">
+        <div class="text-box">
+          <h1>Aim High With <span>STI</span></h1>
+          <a href="#three" class="button button1">About Us</a>
+        </div>
+      </div>
+
+      <div class="banner2">
+        <img src="img/sti2.jpg" alt="">
+        <div class="text-box">
+          <h1>Aim High With <span>STI</span></h1>
+          <a href="#three" class="button button1">About Us</a>
+        </div>
+      </div>
+
+      <div class="banner3">
+        <img src="img/sti3.jpg" alt="">
+        <div class="text-box">
+          <h1>Aim High With <span>STI</span></h1>
+          <a href="#three" class="button button1">About Us</a>
+        </div>
+      </div>
+
+      <div class="banner4">
+        <img src="img/sti4.jpg" alt="">
+        <div class="text-box">
+          <h1>Aim High With <span>STI</span></h1>
+          <a href="#three" class="button button1">About Us</a>
+        </div>
+      </div>
+
+   </div>
+  </section>
+
+  <section id="two">
+    <div class="acads">
+      <img src="img/sti5.png" alt="">
+      <h1>Senior High Tracks</h1>
+      <ul>
+        <li style="font-size: 30px; text-align: justify; margin-left: 300px">Academic Tracks
+          <ul>
+            <li><a href="Acads html/ABM.html" target="home_html" style="color: black;">ABM</a> </li>
+            <li><a href="Acads html/STEM.html" target="home_html" style="color: black;">STEM</a> </li>
+            <li><a href="Acads html/GAS.html" target="home_html" style="color: black;">GAS</a></li>
+          </ul>
+        </li>
+        <br/>
+        <li style="font-size: 30px; text-align: justify; margin-left: 300px">Technical-Vocational-Livelihood (TVL) 
+          <ul>
+              <li><a href="Acads html/ICT.html" target="home_html" style="color: black;">Programming</a></li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <section id="three">
+    <div class="section">
+      <div class="container">
+        <div class="content-section">
+          <div class="title">
+            <h1>About Us</h1>
+          </div>
+          <div class="content">
+            <h3>STI College (Also known as Systems Technology Institute) A school in the Philippines.</h3>
+            <p>They primarily cater to computer science and information technology education, but also offer other courses, such as business management and accountancy. The acronym STI has been declared as an orphan initialism after their name change in 2006...</p>
+            <div class="button">
+              <a href="about.html">Read More</a>
+            </div>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/stamesa.sti.edu/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/stamesa.sti.edu/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/stamesa.sti.edu/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="image-section">
+          <img src="img/sti6.jpg">
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  </div>
+  
+
+
+
+   
+
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+
+
+
+
+  </script>
+</body>
+</html>

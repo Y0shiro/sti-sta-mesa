@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+   </head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <img src="img/stilogo.png" alt="">
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#acads">Academics</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About</a></li>
+      
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+  </div>
+
+  <section>
+    <div class="home">
+       <div class="banner1">
+         <img src="img/sti1.jpg" alt="">
+         <div class="text-box">
+           <h1>Be Future - Ready. Be <span>STI</span></h1>
+           <a href="gallery.html" class="button button1">Visit Gallery</a>
+         </div>
+       </div>
+ 
+       <div class="banner2">
+         <img src="img/sti2.jpg" alt="">
+         <div class="text-box">
+           <h1>Be Future - Ready. Be <span>STI</span></h1>
+           <a href="#" class="button button1">About Us</a>
+         </div>
+       </div>
+ 
+       <div class="banner3">
+         <img src="img/sti3.jpg" alt="">
+         <div class="text-box">
+            <h1>Be Future - Ready. Be <span>STI</span></h1>
+            <a href="#" class="button button1">About Us</a>
+         </div>
+       </div>
+ 
+       <div class="banner4">
+         <img src="img/sti4.jpg" alt="">
+         <div class="text-box">
+            <h1>Be Future - Ready. Be <span>STI</span></h1>
+            <a href="#" class="button button1">About Us</a>
+           
+         </div>
+       </div>
+ 
+    </div>
+   </section>
+
+   <section>
+    <div class="section">
+      <div class="container">
+        <div class="content-section">
+          <div class="title">
+            <h1>About Us</h1>
+          </div>
+          <div class="content">
+            <h3>STI College (Also known as Systems Technology Institute) A school in the Philippines.</h3>
+            <p>They primarily cater to computer science and information technology education, but also offer other courses, such as business management and accountancy. The acronym STI has been declared as an orphan initialism after their name change in 2006</p>
+
+            <h3>Some of STI's campuses nationwide uses various STI trade names.</h3>
+            <p>Student population mainly deterrmine the longevity of the campuses. STI Education Systtems Holdings also owns and operates one non-STI branded college and manages onoe acquired university.</p>
+            
+            
+            <div class="right">
+            <h3>STI also welcomes Junior High School and Senior High School Students to study here in this school of ours.</h3>
+            <p>What's more interesting is that the teachers here in this school care about their students and the teachers here and also somewhat outstanding at the same time. The classrooms are good, the rooms are great, and all the teachers are great and everything else!.</p>
+            <p>STI also ensures that learners from all walks of like can turn their dreams into reality during these trying times through its various tertiary programs.</p>
+           </div>
+
+           <div class="left">
+            <h3>STI also known as a valued academy </h3>
+            <p>in it that develops their students to be their students to be a knowledgeable and up to date in their chosen field of expertise. You may also apply for scholarship in this school.</p>
+            <p>This school specializes in Science, Technology, Engineering, and Mathematics. Our school, we want to make you have a bright future. Be Future-Ready. Be STI!</p>
+           </div>
+          </div>
+         
+        </div>
+        <div class="image-section">
+          <img src="img/sti7.png">
+        </div>
+
+        <div class="image-right">
+            <img src="img/sti8.jpg">
+          </div>
+
+          <div class="image-left">
+            <img src="img/sti9.jpg">
+          </div>
+      </div>
+    </div>
+  
+  </section>
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+
+
+
+
+  </script>

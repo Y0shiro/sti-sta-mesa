@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+   </head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <img src="img/stilogo.png" alt="">
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#acads">Academics</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About</a></li>
+      
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+  </div>
+
+<section>
+    <h2>G A L L E R Y</h2>
+    <div class="gal">
+        <a href="img/gall9.jpg"><img id="img-gal" src="img/gall9.jpg" alt=""> </a>
+        <a href="img/gall10.jpg"><img id="img-gal" src="img/gall10.jpg" alt=""> </a>
+        <a href="img/gall11.jpg"><img id="img-gal" src="img/gall11.jpg" alt=""> </a>
+        <a href="img/gall12.jpg"><img id="img-gal" src="img/gall12.jpg" alt=""> </a>
+        <br>
+        <a href="img/gall5.jpg"><img id="img-gal" src="img/gall5.jpg" alt=""> </a>
+        <a href="img/gall6.jpg"><img id="img-gal" src="img/gall6.jpg" alt=""> </a>
+        <a href="img/gall7.jpg"><img id="img-gal" src="img/gall7.jpg" alt=""> </a>
+        <a href="img/gall8.jpg"><img id="img-gal" src="img/gall8.jpg" alt=""> </a>
+        <br>
+        <a href="img/gall1.jpg"><img id="img-gal" src="img/gall1.jpg" alt=""> </a>
+        <a href="img/gall2.jpg"><img id="img-gal" src="img/gall2.jpg" alt=""> </a>
+        <a href="img/gall3.jpg"><img id="img-gal" src="img/gall3.jpg" alt=""> </a>
+        <a href="img/gall4.jpg"><img id="img-gal" src="img/gall4.jpg" alt=""> </a>
+    
+    </div>
+</section>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+
+
+
+
+  </script>
+  </body>
+  </html>
